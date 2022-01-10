@@ -107,7 +107,9 @@
 </body>
 </html>
 <script>
+    let id;
     async function imageshow(){
+        clearInterval(id)
 let type=document.querySelector("#choice").value
         try{
 
@@ -127,7 +129,7 @@ function show(arr){
     img.src=arr[arr.length-1].largeImageURL
     document.querySelector("#slider").append(img)
     let i=0
-setInterval(function(){
+  id= setInterval(function(){
     document.querySelector("#slider").innerHTML=""
     let img=document.createElement("img")
     img.src=arr[i].largeImageURL
