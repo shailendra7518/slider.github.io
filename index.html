@@ -50,18 +50,21 @@
             width: 100%;
             height: 100%;
           position: relative;
-          animation:hello 7s infinite;
+          animation:hello 9s infinite;
         }
         @keyframes hello {
          0%{
-           right: 100%;
+           opacity: 0;
          }
       
        20%{
-           right: 0.0px;
+           right: 1;
+       }
+       80%{
+           opacity: 1;
        }
        100%{
-           right: 0px;
+           opacity: 0;
        }
         }
     </style>
@@ -81,7 +84,7 @@
 
         try{
 
-            let res=await fetch(`https://pixabay.com/api/?key=24651873-43a437065aeab0602e2dcd653&q=beautiful`)
+            let res=await fetch(`https://pixabay.com/api/?key=24651873-43a437065aeab0602e2dcd653&q=waterfall`)
             let data=await res.json()
             console.log(data)
             let image=data.hits
@@ -108,7 +111,7 @@ i++
 if(i==arr.length){
     i=0
 }
-},7000)
+},9000)
 // for(let i=0;i<arr.length;i++){
 //     set
    
