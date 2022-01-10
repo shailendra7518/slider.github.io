@@ -9,12 +9,24 @@
         body{
             background-color: teal;
         }
+        #navbar{
+            height: 50px;
+           border: 2px solid rebeccapurple;
+           display: flex;
+           justify-content: center;
+           width:60% ;
+           margin: auto;
+           padding: 0.3%;
+           background-color: lightcoral;
+           border-radius: 20px;
+           gap: 5px;
+        }
         #container{
             border-radius: 20px;
             width: 90%;
             height:auto;
             margin: auto;
-          margin-top: 2.6%;
+        margin-top: 0.6%;
             border: 15px solid rgb(79, 155, 35);
             display: flex;
             flex-flow: column;
@@ -41,7 +53,16 @@
             font-weight: 900;
             padding: 10px;
             border-radius: 10px;
-            margin-top: 10px;
+          
+            width: 10%;
+            height: 100%;
+        }
+        input{
+            border-radius: 10px;
+            font-size: large;
+            font-weight: 900;
+            background-color: rgb(186, 199, 212);
+            color: rgb(38, 126, 167);
         }
         button:active{
             background-color: seagreen;
@@ -70,21 +91,26 @@
     </style>
 </head>
 <body>
+    <div id="navbar">
+        <input type="text" id="choice" placeholder="Enter Image type">
+        <button onclick="imageshow()">Start</button>
+    </div>
     <div id="container">
+        
       <div id="slider">
 
         </div>
         
-        <button onclick="imageshow()">Start</button>
+       
     </div>
 </body>
 </html>
 <script>
     async function imageshow(){
-
+let type=document.querySelector("#choice").value
         try{
 
-            let res=await fetch(`https://pixabay.com/api/?key=24651873-43a437065aeab0602e2dcd653&q=waterfall`)
+            let res=await fetch(`https://pixabay.com/api/?key=24651873-43a437065aeab0602e2dcd653&q=${type}`)
             let data=await res.json()
             console.log(data)
             let image=data.hits
