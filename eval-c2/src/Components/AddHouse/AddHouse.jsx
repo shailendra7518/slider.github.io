@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useRef} from "react";
 import axios from "axios";
 export const AddHouse = () => {
 
@@ -10,7 +10,7 @@ const [house,sethouse]=useState({
      Address:"",
      AreaCode:"",
      Rent:"",
-     Bachelor:"",
+     Bachelor:"bachlor",
      Married:"",
      Image:""
 
@@ -20,6 +20,7 @@ const [house,sethouse]=useState({
 
 const handlechange=(e)=>{
 const {id,value}= e.target
+
 
 sethouse({...house,[id]:value})
 
@@ -40,6 +41,17 @@ const handlesubmit=(e)=>{
 setHouseData([...HouseData,house])
 
  
+sethouse({
+  Name:"",
+  OwnerName:"",
+  Address:"",
+  AreaCode:"",
+  Rent:"",
+  Bachelor:"",
+  Married:"",
+  Image:""
+
+})
 
 
 
@@ -64,18 +76,18 @@ setHouseData([...HouseData,house])
         <input value={house.Address} id="Address" type="text" className="address" onChange={handlechange} required />
         <br />
         <label>areaCode</label>
-        <input value={house.AreaCode} id="AreaCode" type="text" className="areaCode" onChange={handlechange} required />
+        <input value={house.AreaCode} id="AreaCode" type="number" className="areaCode" onChange={handlechange} required />
         <br />
         <label>rent</label>
-        <input value={house.Rent} id="Rent" type="text" className="rent" onChange={handlechange} required />
+        <input value={house.Rent} id="Rent" type="number" className="rent" onChange={handlechange} required />
         <br />
         <label>preferredTenant</label>
         <br />
         <label>bachelor</label>
-        <input checked={house.Bachelor} id="Bachelor" type="checkbox" className="bachelor" onChange={handlechange} />
+        <input  id="Bachelor" type="checkbox" className="bachelor" onChange={handlechange} />
         <br />
         <label>married</label>
-        <input checked={house.Married} id="Married" type="checkbox" className="married" onChange={handlechange}/>
+        <input  id="Married" type="checkbox" className="married" onChange={handlechange}/>
         <br />
         <label>image</label>
         <input value={house.Image} id="Image" type="text" className="image" required onChange={handlechange}/>

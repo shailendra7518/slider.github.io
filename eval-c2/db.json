@@ -1,26 +1,37 @@
 {
   "houses": [
     {
-      "Name": "dfafaf",
-      "OwnerName": "afdafaf",
-      "Address": "dfafa",
-      "AreaCode": "afafa",
-      "Rent": "afafa",
-      "Bachelor": "on",
-      "Married": "on",
-      "Image": "fafaffa",
+      "Name": "maurya house",
+      "OwnerName": "shailendra kumar",
+      "Address": "purematadeen",
+      "AreaCode": "212654",
+      "Rent": "50000",
+      "Bachelor": "bachlor",
+      "Married": "",
+      "Image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "id": 1
     },
     {
-      "Name": "adfafaf",
-      "OwnerName": "afafa",
-      "Address": "afafaf",
-      "AreaCode": "fdafa",
-      "Rent": "fdafa",
+      "Name": "alishan villa",
+      "OwnerName": "md alishan ali",
+      "Address": "gorakhpur",
+      "AreaCode": "212651",
+      "Rent": "30000",
+      "Bachelor": "bachlor",
+      "Married": "on",
+      "Image": "na",
+      "id": 2
+    },
+    {
+      "Name": "chandan house",
+      "OwnerName": "chandan kumar",
+      "Address": "jharkhand",
+      "AreaCode": "62041",
+      "Rent": "800000",
       "Bachelor": "on",
       "Married": "on",
-      "Image": "fafafa",
-      "id": 2
+      "Image": "no",
+      "id": 3
     }
   ]
 }
