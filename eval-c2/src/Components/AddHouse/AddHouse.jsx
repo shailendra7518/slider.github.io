@@ -5,14 +5,14 @@ export const AddHouse = () => {
 const [HouseData,setHouseData]=useState([{}])
 
 const [house,sethouse]=useState({
-     Name:"",
-     OwnerName:"",
-     Address:"",
-     AreaCode:"",
-     Rent:"",
-     Bachelor:"bachlor",
-     Married:"",
-     Image:""
+     name:"",
+     ownerName:"",
+     address:"",
+     areaCode:"",
+     rent:"",
+     bachelor:"bachlor",
+     married:"",
+     image:""
 
 
 })
@@ -42,14 +42,14 @@ setHouseData([...HouseData,house])
 
  
 sethouse({
-  Name:"",
-  OwnerName:"",
-  Address:"",
-  AreaCode:"",
-  Rent:"",
-  Bachelor:"",
-  Married:"",
-  Image:""
+  name:"",
+  ownerName:"",
+  address:"",
+  areaCode:"",
+  rent:"",
+  bachelor:"",
+  married:"",
+  image:""
 
 })
 
@@ -67,30 +67,30 @@ sethouse({
     <div className="addHouseContainer">
       <form onSubmit={handlesubmit}>
         <label>name</label>
-        <input type="text" id="Name" className="name" value={house.Name} onChange={handlechange} required />
+        <input type="text" id="name" className="name" value={house.Name} onChange={handlechange} required />
         <br />
         <label>ownerName</label>
-        <input value={house.OwnerName} id="OwnerName" type="text" className="ownerName" onChange={handlechange} required />
+        <input value={house.ownerName} id="ownerName" type="text" className="ownerName" onChange={handlechange} required />
         <br />
         <label>address</label>
-        <input value={house.Address} id="Address" type="text" className="address" onChange={handlechange} required />
+        <input value={house.address} id="address" type="textarea" className="address" onChange={handlechange} required />
         <br />
         <label>areaCode</label>
-        <input value={house.AreaCode} id="AreaCode" type="number" className="areaCode" onChange={handlechange} required />
+        <input value={house.areaCode} id="areaCode" type="number" className="areaCode" onChange={handlechange} required />
         <br />
         <label>rent</label>
-        <input value={house.Rent} id="Rent" type="number" className="rent" onChange={handlechange} required />
+        <input value={house.rent} id="rent" type="number" className="rent" onChange={handlechange} required />
         <br />
         <label>preferredTenant</label>
         <br />
         <label>bachelor</label>
-        <input  id="Bachelor" type="checkbox" className="bachelor" onChange={handlechange} />
+        <input  id="bachelor" type="checkbox" className="bachelor" onChange={handlechange} />
         <br />
         <label>married</label>
-        <input  id="Married" type="checkbox" className="married" onChange={handlechange}/>
+        <input  id="married" type="checkbox" className="married" onChange={handlechange}/>
         <br />
         <label>image</label>
-        <input value={house.Image} id="Image" type="text" className="image" required onChange={handlechange}/>
+        <input value={house.image} id="image" type="text" className="image" required onChange={handlechange}/>
         <br />
         <input className="submitBtn" type="submit"  />
       </form>

@@ -1,37 +1,26 @@
 {
   "houses": [
     {
-      "Name": "maurya house",
-      "OwnerName": "shailendra kumar",
-      "Address": "purematadeen",
-      "AreaCode": "212654",
-      "Rent": "50000",
-      "Bachelor": "bachlor",
-      "Married": "",
-      "Image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "shailendra villa",
+      "ownerName": "shailendra kumar",
+      "address": "purematadeen",
+      "areaCode": "212654",
+      "rent": "5000",
+      "bachelor": "on",
+      "married": "on",
+      "image": "na",
       "id": 1
     },
     {
-      "Name": "alishan villa",
-      "OwnerName": "md alishan ali",
-      "Address": "gorakhpur",
-      "AreaCode": "212651",
-      "Rent": "30000",
-      "Bachelor": "bachlor",
-      "Married": "on",
-      "Image": "na",
+      "name": "chandan",
+      "ownerName": "chandan kumar",
+      "address": "jharkhand",
+      "areaCode": "56116",
+      "rent": "3000",
+      "bachelor": "on",
+      "married": "on",
+      "image": "na",
       "id": 2
-    },
-    {
-      "Name": "chandan house",
-      "OwnerName": "chandan kumar",
-      "Address": "jharkhand",
-      "AreaCode": "62041",
-      "Rent": "800000",
-      "Bachelor": "on",
-      "Married": "on",
-      "Image": "no",
-      "id": 3
     }
   ]
 }

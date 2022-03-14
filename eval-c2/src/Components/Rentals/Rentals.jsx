@@ -51,7 +51,7 @@ function RentlowTohigh(){
  
   Allhouse.sort((a,b)=>{
   
-    return a.Rent-b.Rent
+    return a.rent-b.rent
    })
    setAllhouse([...Allhouse])
 
@@ -60,7 +60,7 @@ function RenthighTolow(){
  
   Allhouse.sort((a,b)=>{
   
-    return b.Rent-a.Rent
+    return b.rent-a.rent
    })
    setAllhouse([...Allhouse])
 
@@ -73,7 +73,7 @@ function ArealowTohigh(){
  
   Allhouse.sort((a,b)=>{
   
-    return a.Rent-b.Rent
+    return a.areaCode-b.areaCode
    })
    setAllhouse([...Allhouse])
 
@@ -82,15 +82,12 @@ function AreahighTolow(){
  
   Allhouse.sort((a,b)=>{
   
-    return b.Rent-a.Rent
+    return b.areaCode-a.areaCode
    })
    setAllhouse([...Allhouse])
 
 }
 
-function filterfun(){
-
-}
 
 
 
@@ -100,7 +97,7 @@ function searchfun(e){
   if(e.charCode ==13){
     let ans= Allhouse.filter((ele)=>{
    
-     if(ele.Address==search){
+     if(ele.address==search){
        return ele
      }
 
@@ -148,11 +145,11 @@ function searchfun(e){
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
-                <td className="houseName">{house.Name} </td>
-                <td className="ownersName">{house.OwnerName}</td>
-                <td className="address">{house.Address}</td>
-                <td className="areaCode">{house.AreaCode}</td>
-                <td className="rent">{house.Rent}</td>
+                <td className="houseName">{house.name} </td>
+                <td className="ownersName">{house.ownerName}</td>
+                <td className="address">{house.address}</td>
+                <td className="areaCode">{house.areaCode}</td>
+                <td className="rent">{house.rent}</td>
                 <td className="preferredTenants">
                   {/* Show text Both or Bachelors or Married based on values */}
                 </td>
