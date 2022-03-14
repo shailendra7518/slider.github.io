@@ -1,0 +1,26 @@
+{
+  "houses": [
+    {
+      "Name": "dfafaf",
+      "OwnerName": "afdafaf",
+      "Address": "dfafa",
+      "AreaCode": "afafa",
+      "Rent": "afafa",
+      "Bachelor": "on",
+      "Married": "on",
+      "Image": "fafaffa",
+      "id": 1
+    },
+    {
+      "Name": "adfafaf",
+      "OwnerName": "afafa",
+      "Address": "afafaf",
+      "AreaCode": "fdafa",
+      "Rent": "fdafa",
+      "Bachelor": "on",
+      "Married": "on",
+      "Image": "fafafa",
+      "id": 2
+    }
+  ]
+}
